@@ -1,0 +1,16 @@
+/* Align Content to left */
+#what .items .item {
+  display: flex;
+  text-align: left; 
+}
+
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.5rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+#contact .mapouter {
+  flex:2;  
+}

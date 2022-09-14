@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤Macedonian Flag</title>
+  <link rel="icon" href="https://image.freepik.com/free-vector/macedonia-flag-waving-abstract-background_183326-112.jpg"
+    type="image/x-icon">
+  <style>
+    .body {
+      background-color: gray;
+    }
+
+    /* main is the large red background */
+    .main {
+      display: block;
+      width: 700px;
+      height: 500px;
+      position: relative;
+      background: red;
+      border-style: solid;
+      margin: -5px auto;
+    }
+
+    /* Sun components */
+
+    .cicle-center {
+
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: yellow;
+      border-radius: 50%;
+      /* top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); */
+      top: 174px;
+      left: 273px;
+      /* margin: 0 auto; */
+      z-index: 3;     
+      /* width: 50%; */
+      /* transform: translateY(-50%); */
+
+    }
+    .cicle-overlay {
+
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background: red;
+    border-radius: 50%;
+    /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    top: 164px;
+    left: 263px;
+    /* margin: 0 auto; */
+    z-index: 2;
+
+/* width: 50%; */
+/* transform: translateY(-50%); */
+
+}
+
+
+    .ray-left-down-corner {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(94% 0%, 100% 0%, 22% 100%, 0% 100%);
+      position: absolute;
+      top: 250px;
+      right: 350px;
+    }
+
+    .ray-right-down-corner {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(0 0, 6% 0, 100% 100%, 78% 100%);
+      position: absolute;
+      top: 250px;
+      left: 350px;
+    }
+    .ray-left-up-corner {
+      width: 350px;
+      height: 250px;
+      background:yellow;
+      clip-path: polygon(0 0, 22% 0, 100% 100%, 94% 100%);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .ray-right-up-corner {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(78% 0, 100% 0%, 6% 100%, 0 100%);
+      position: absolute;
+      top: 0px;
+      left: 350px;
+    }
+    .ray-right-mid {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(100% 45%, 100% 55%, 0 65%, 0 34%);
+      position: absolute;
+      top: 125px;
+      left: 0px;    
+    }
+    .ray-left-mid {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(100% 31%, 100% 63%, 0 55%, 0 45%);
+      position: absolute;
+      top: 125px;
+      left:350px;    
+    }
+    .ray-top-mid {
+      width: 350px;
+      height: 250px;
+      background: yellow;
+      clip-path: polygon(38% 0, 63% 0, 56% 100%, 45% 100%);
+      position: absolute;
+      top: 0px;
+      left:170px;    
+    }
+    .ray-bottom-mid {
+      width: 350px;
+      height: 250px;
+      background:yellow;
+      clip-path: polygon(45% 0, 55% 0, 63% 100%, 36% 100%);
+      position: absolute;
+      top: 250px;
+      left:170px;    
+    }
+
+
+/* 
+    .circle-sun-line-1{
+      border-left: 1px solid blue;
+      height: 170px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 0;
+    }
+    .circle-sun-line-2{
+      border-bottom: 1px solid blue;
+      width: 170px;
+      position: absolute;
+      top: 50%;
+    }
+    */
+
+
+  </style>
+</head>
+
+<body class="body">
+
+  <div class="main">
+    <div class="cicle-center">
+      <div class="circle-sun-line-1"></div>
+      <div class="circle-sun-line-2"></div>
+    </div>
+    <div class="ray-left-down-corner"></div>
+    <div class="ray-right-down-corner"></div>
+    <div class="ray-left-up-corner"></div>
+    <div class="ray-right-up-corner"></div>
+
+    <div class="ray-top-mid"></div>
+    <div class="ray-right-mid"></div>
+    <div class="ray-bottom-mid"></div>
+    <div class="ray-left-mid"></div>
+     
+    <div class="cicle-overlay"></div>
+  </div>
+</body>
+
+</html>
